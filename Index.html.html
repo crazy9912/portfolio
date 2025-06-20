@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mopuri Chandu | Cybersecurity Portfolio</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+      background-image: radial-gradient(circle at top left, #0f0f0f, #000000 90%);
+    }
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #00ffcc;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #00e6e6;
+      text-shadow: 0 0 10px #00e6e6;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 10px;
+    }
+    nav ul li a {
+      color: #66ff99;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 5px #00cc66;
+    }
+    section {
+      padding: 60px 25px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    h2 {
+      color: #ff3399;
+      text-shadow: 0 0 8px #ff1aff;
+    }
+    h3.project-title {
+      color: #00bfff;
+      text-shadow: 0 0 6px #00ffff;
+    }
+    .center {
+      text-align: center;
+    }
+    .profile-img {
+      width: 200px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffcc;
+      box-shadow: 0 0 20px #00ffcc;
+    }
+    .skills-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .skills-columns h3 {
+      border-bottom: 2px solid #00ffcc;
+      color: #ff9933;
+      text-shadow: 0 0 6px #ff6600;
+    }
+    .skills-columns ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    a {
+      color: #33ccff;
+      text-shadow: 0 0 5px #0099ff;
+    }
+    footer {
+      background: #000;
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 -2px 10px #00ffcc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mopuri Chandu</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="center">
+  <img src="C:\Users\mopur\OneDrive\Desktop\0b2e53f5-5a70-44a6-8fd4-1a3422757bff.jpeg" alt="Chandu" class="profile-img">
+  <h2>Cybersecurity Enthusiast</h2>
+  <p>B.Tech CSE student passionate about ethical hacking, cybersecurity operations, and threat analysis. Currently seeking internships and fresher opportunities to apply and grow my skills.</p>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <ul>
+    <li><strong>B.Tech in Computer Science and Engineering</strong> – Alliance University (Graduating 2026)</li>
+    <li><strong>12th Grade</strong> – Sri Shiridi Sai Jr. College – 69%</li>
+    <li><strong>10th Grade</strong> – ZPHS Thallaproddatur – 100%</li>
+  </ul>
+  <p><strong>Certifications:</strong></p>
+  <ul>
+    <li>Google Cybersecurity Professional Certificate – Coursera</li>
+    <li>Cyber Security 101 – TryHackMe</li>
+    <li>Linux Intrusion Essentials – Udemy</li>
+    <li>Certified Ethical Hacker (CEH) – <em>In Progress</em></li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <section style="font-family: 'Courier New', monospace; color: #33ffcc;">
+    <h3 class="project-title">🔍 Log Analyzer for Suspicious Activities</h3>
+    <p><strong>Tools Used:</strong> Python, Regex, Linux log files (auth.log, syslog), Bash</p>
+    <p><strong>How it Works:</strong></p>
+    <p>This CLI tool scans Linux logs to identify unusual login attempts and suspicious behavior. It applies regex filters to extract failed logins, SSH brute-force attempts, and unauthorized root access. The tool summarizes logs into a readable format, helping security teams respond quickly to incidents.</p>
+  </section>
+
+  <section style="font-family: 'Courier New', monospace; color: #33ffcc;">
+    <h3 class="project-title">🛡️ Password Strength Audit Tool</h3>
+    <p><strong>Tools Used:</strong> Python, Bash, John the Ripper, Linux /etc/shadow</p>
+    <p><strong>How it Works:</strong></p>
+    <p>This tool automates password hash extraction and strength testing. It uses John the Ripper to perform dictionary attacks against Linux shadow file entries, generates detailed audit reports, and flags weak or reused passwords for further action by system administrators.</p>
+  </section>
+
+  <section style="font-family: 'Courier New', monospace; color: #33ffcc;">
+    <h3 class="project-title">🧪 Vulnerability Assessment Toolkit</h3>
+    <p><strong>Tools Used:</strong> OpenVAS, Metasploit, Nessus, CVSS calculator</p>
+    <p><strong>How it Works:</strong></p>
+    <p>This framework automates the scanning and exploitation of vulnerabilities. OpenVAS is used to generate vulnerability reports. Metasploit modules validate findings. Nessus helps in classifying vulnerabilities based on CVSS score. The combined toolkit helps mimic penetration testing cycles effectively.</p>
+  </section>
+
+  
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-columns">
+    <div>
+      <h3>Networking & Security</h3>
+      <ul>
+        <li>Nmap</li>
+        <li>Wireshark</li>
+        <li>Metasploit</li>
+        <li>Burp Suite</li>
+        <li>Hydra</li>
+        <li>Splunk</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Programming & Scripting</h3>
+      <ul>
+        <li>Python</li>
+        <li>C</li>
+        <li>Bash</li>
+        <li>PowerShell</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Frontend & Tools</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git & GitHub</li>
+        <li>Linux</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Cyber Concepts</h3>
+      <ul>
+        <li>Cryptography</li>
+        <li>Intrusion Detection</li>
+        <li>Vulnerability Assessment</li>
+        <li>Log Analysis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:mopurichandu88@gmail.com">mopurichandu88@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/mopuri-chandu-3bb7562ab/" target="_blank">linkedin.com/in/mopuri-chandu</a></p>
+  <p>GitHub: <a href="https://github.com/crazy9912" target="_blank">github.com/crazy9912</a></p>
+  <p>LeetCode: <a href="https://leetcode.com/u/Chandu99120/" target="_blank">leetcode.com/u/Chandu99120</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Mopuri Chandu | Inspired by Kali Linux Terminal Theme | Stay curious. Stay secure.</p>
+</footer>
+
+</body>
+</html>
